@@ -1,4 +1,4 @@
-From 37e98905edef29a276d3021bf1edbcf143e98ca0 Mon Sep 17 00:00:00 2001
+From 2ac2b07551f1ddd64ae55785ca1319a2631fcfbb Mon Sep 17 00:00:00 2001
 From: Zach Brown <zach.brown@destroystokyo.com>
 Date: Sat, 19 Nov 2016 22:10:34 -0600
 Subject: [PATCH] SPIGOT-2806: Backport an event fix
@@ -23,5 +23,5 @@ index d39ffbe..844916f 100644
  
                          if (j == 1) {
 -- 
-2.10.2
+1.9.4.msysgit.2
 

@@ -1,14 +1,14 @@
-From 2693dcda742dac4a8ffd686a0cd52fddd36c5449 Mon Sep 17 00:00:00 2001
+From 06235d116b0117f9ee0296d9530134c414ade0d1 Mon Sep 17 00:00:00 2001
 From: Zach Brown <zach.brown@destroystokyo.com>
 Date: Sat, 12 Nov 2016 23:25:22 -0600
 Subject: [PATCH] Filter bad data from ArmorStand and SpawnEgg items
 
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 9d361cb..651f23e 100644
+index e4aa795..42a6955 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -403,4 +403,12 @@ public class PaperWorldConfig {
+@@ -412,4 +412,12 @@ public class PaperWorldConfig {
      private void removeCorruptTEs() {
          removeCorruptTEs = getBoolean("remove-corrupt-tile-entities", false);
      }
@@ -61,5 +61,5 @@ index 6317cba..1b3816f 100644
                  entity.f(nbttagcompound1);
              }
 -- 
-2.10.2
+1.9.4.msysgit.2
 

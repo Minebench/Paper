@@ -1,4 +1,4 @@
-From de20f349b8fdc5cb057267034bb9926673706aa1 Mon Sep 17 00:00:00 2001
+From fa9810ff39bd459ea8422a6f64b8bde4c9a34ac9 Mon Sep 17 00:00:00 2001
 From: Aikar <aikar@aikar.co>
 Date: Thu, 3 Nov 2016 21:52:22 -0400
 Subject: [PATCH] Prevent Auto Save if Save Queue is full
@@ -7,10 +7,10 @@ If the save queue already has 50 (configurable) of chunks pending,
 then avoid processing auto save (which would add more)
 
 diff --git a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-index 51b34d9..9d361cb 100644
+index 3c63c68..e4aa795 100644
 --- a/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
 +++ b/src/main/java/com/destroystokyo/paper/PaperWorldConfig.java
-@@ -394,6 +394,11 @@ public class PaperWorldConfig {
+@@ -403,6 +403,11 @@ public class PaperWorldConfig {
          maxAutoSaveChunksPerTick = getInt("max-auto-save-chunks-per-tick", 24);
      }
  
@@ -63,5 +63,5 @@ index b672a38..70e71cc 100644
          ChunkCoordIntPair chunkcoordintpair = new ChunkCoordIntPair(i, j);
  
 -- 
-2.10.2
+1.9.4.msysgit.2
 
